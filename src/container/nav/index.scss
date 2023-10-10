@@ -1,0 +1,38 @@
+@use '../../style' as s;
+
+main {
+	display: flex;
+	justify-content: center;
+	padding: s.space(10);
+} 
+
+.nav {
+	width: 100%;
+	max-width: 1300px;
+	border-radius: 100px;
+	padding: s.space(4) s.space(10);
+	gap: s.space(10);
+	display: flex;
+	background-color: #35363A;
+
+	&__button {
+		width: 41px;
+		height: 41px;
+
+		transition: 0.7s;
+
+		&:hover {
+			opacity: 0.7
+		}
+	}
+
+	&__input {
+		width: 100%;
+		max-width: 832px;
+		border-radius: 208px;
+		padding: s.space(1) s.space(3);
+		background-color: #202124;
+		color: #FFFFFF;
+		font-size: 32px;
+	}
+}
